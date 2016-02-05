@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+        <title>One-page PRU</title>
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+        <!-- Optional theme -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+        <style>
+        .section {
+            padding-bottom: 20px;
+            padding-top: 40px;
+        }
+        .section h1>small {
+            color: #fff;
+        }
+        #first {
+            background-color: #fff;
+            color: #000;
+        }
+        #first p {
+            margin-bottom: 15px;
+            font-size: 21px;
+            font-weight: 200;
+            /* color: #fff; */
+        }
+        #argumenty {
+            background-color: #3CBAF1;
+            color: #fff;
+        }
+        #examples {
+            background-color: #6CC9F1;
+            color: #fff;
+        }
+
+        #procedura {
+            background-color: #fff;
+            color: #000;
+        }
+        #step-first {
+            background-color: #3CBAF1;
+            color: #fff;
+        }
+        #step-second {
+            background-color: #009FE3;
+            color: #fff;
+        }
+        #step-third {
+            background-color: #6CC9F1;
+            color: #fff;
+        }
+        body {
+            padding-top: 70px;
+            position:relative;
+        }
+        .navbar {
+            background-color: #fff;
+        }
+        .navbar-nav > li.active {
+            background-color: #009FE3;
+        }
+        .navbar-nav > li.active a {
+            color: #fff;
+        
+        }
+        </style>
+    </head>
+    <body data-spy="scroll" data-target="#navbar-example">
+        <nav class="navbar navbar-fixed-top">
+          <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="#">Publiczny Rejestr Umów</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="navbar-example">
+              <ul class="nav navbar-nav">
+                <li><a href="#first">Home</a></li>
+                <li><a href="#argumenty">Dlaczego?</a></li>
+                <li><a href="#examples">Przykłady</a></li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Procedura <span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="#procedura">Wstęp</a></li>
+                    <li><a href="#step-first">Rozpoznanie</a></li>
+                    <li><a href="#step-second">Kopia rejestru</a></li>
+                    <li><a href="#step-third">Presja społeczna</a></li>
+                  </ul>
+                </li>
+                <li><a href="#contact">Kontakt</a></li>
+                <li><a href="http://facebook.com/"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="mail:naczelnik@jawnosc.tk"><i class="fa fa-envelope"></i></a></li>
+              </ul>
+              <form class="navbar-form navbar-right" role="newsletter">
+                <div class="form-group">
+                  <input type="text" class="form-control" placeholder="E-mail">
+                </div>
+                <button type="submit" class="btn btn-default">Zapisz do newslettera</button>
+              </form>
+            </div><!-- /.navbar-collapse -->
+          </div><!-- /.container-fluid -->
+        </nav>
+
+        <div class="row section" id="first">
+          <div class="container">
+            <img src="pru.svg" width="100%">
+            <div class="col-md-12">
+                <p>Chcemy, aby każdy urząd publikował na swoich podstawowe informacje o zawieranych umowach. Docelowo powinny być to informacje o wszystkich wydatkach.</p>
+                <p>Nie jesteśmy w stanie wystąpić o rejestr umów do każdego urzędu w Polsce, dlatego napisaliśmy procudurę jak każdy w trzech prostych krokach może przekonać do jego publikacji.</p>
+                <a class="btn btn-primary btn-lg" href="#procedura" role="button">Przejdź do procedury &raquo;</a>
+            </div>
+          </div>
+        </div>
+        <div class="row section" id="argumenty">
+          <!-- Example row of columns -->
+          <div class="container">
+            <div class="col-md-12">
+                <h1>Dlaczego?</h1>
+            </div>
+            <div class="col-md-3">
+              <h2>Jakość debaty publicznej</h2>
+              <p>Zainteresowany obywatel może w każdym przypadku sprawdzać oraz odnosić się do konkretnych wydatków instytucji publicznej</p>
+              <!--<p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>-->
+            </div>
+            <div class="col-md-3">
+              <h2>Prewencja</h2>
+              <p>Wiedząc o tym, że każdy wydatek jest jawny i może zostać krytycznie oceniony decydent bardzo dba o to, aby zapłacona kwota zapewniała dobrą jakość za dobrą cenę. To ochrona przed nieprawidłowościami.</p>
+              <!--<p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>-->
+           </div>
+           <div class="col-md-3">
+             <h2>Partnerstwo</h2>
+             <p>Widząc jak pieniądze są wydawane i co ile kosztuje możemy się z tego uczyć. Niektórzy porównują ceny pomiędzy gminami i tak zaczyna się wspólne myślenie o tym jak wydać pieniądze najlepiej.</p>
+             <!--<p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>-->
+           </div>
+           <div class="col-md-3">
+             <h2>Oszczędność</h2>
+             <p>Systematyczna publikacja zmniejsza koszty działania administracji, usprawnia prace urzędników, którzy w takim razie nie muszą odpowiadać na składane coraz częściej wnioski.</p>
+             <!--<p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>-->
+           </div>
+          </div>
+        </div>
+        <div class="row section" id="examples">
+            <div class="container">
+            <h1>Przykłady</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur non corrupti ullam aliquid cum! Quis facilis suscipit, magnam, dolore doloremque praesentium illo illum quod debitis dolores, pariatur adipisci eius iste.</p>
+            <p>Voluptas expedita dolor blanditiis, ut reiciendis magni inventore rem perspiciatis laudantium, error recusandae iusto, maiores aliquid beatae aliquam quaerat tempore! Veritatis ullam unde quia dicta porro voluptatum ea, possimus aliquam.</p>
+            <p>Odit saepe consequuntur minus mollitia! Tenetur consequatur illum incidunt cumque, autem voluptates. Et delectus repellendus amet! Sed quod, commodi maiores? In deserunt minus sequi cupiditate fuga. Dolorem saepe distinctio repellat.</p>
+            <p>Eum excepturi sunt, dolorum, laborum pariatur perferendis libero iure non asperiores incidunt nostrum maiores animi beatae ducimus, aliquid voluptas. Magnam similique ratione sint animi adipisci esse, aliquam repellat impedit iure.</p>
+            <p>Illum, harum, magnam. Reprehenderit itaque possimus architecto ducimus, corporis ex rem vitae molestiae aperiam ab provident mollitia minima, assumenda fugit, repellat illum dignissimos nisi iure asperiores. Numquam reiciendis alias, quasi.</p>
+            <p>Asperiores ab assumenda obcaecati at repudiandae, recusandae corrupti placeat possimus eum beatae, iure magni dolore enim. Eum molestias sunt debitis praesentium vero, autem dolorem, sint cupiditate itaque tempore quo unde?</p>
+            <p>Similique perspiciatis voluptate vitae perferendis aliquam officiis, nam asperiores ipsa fugit adipisci, provident eius laudantium, facilis voluptates pariatur expedita minus et totam dolorem molestias, eveniet natus ad. Tempore accusantium, voluptatem.</p>
+            <p>Quasi excepturi perferendis, ex autem voluptate doloribus officiis odio possimus dolore enim totam tenetur adipisci iste velit fugit ipsam sed amet et minus? Laboriosam aliquam iusto quidem doloribus rem culpa.</p>
+            <p>Repellendus sed, veritatis. In quis labore, eveniet cumque aperiam, eius culpa vero maiores iste fuga magnam sunt perspiciatis quae vitae officiis, iure commodi natus eos ab, sint suscipit dicta id.</p>
+            <p>Quasi delectus cum, commodi accusamus dolor repellat facilis, fugit enim adipisci cupiditate iusto dolore! Sunt, pariatur sint soluta tempore, necessitatibus maxime eligendi laborum cupiditate ab, fuga, architecto dolorum dignissimos quas!</p>
+            </div>
+
+        </div>
+
+        <div class="row section" id="procedura">
+            <div class="container">
+            <h1>Procedura</h1>
+            <img src="pru-procedura.jpg" width="100%">
+            </div>
+        </div>
+
+        <div class="row section" id="step-first">
+            <div class="container">
+                <div class="col-md-12">
+                <h1>Etap 1 <small>Rozpoznanie</small></h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat eveniet consectetur quibusdam quis voluptate beatae in velit. Quidem nobis odio maxime, veniam quia, ea nihil commodi illum, odit, a perferendis.</p>
+                <p>Velit maxime ullam, aperiam officiis sequi obcaecati? Natus quidem sequi labore sint reiciendis tempore, quasi quaerat amet cum asperiores, in assumenda dolore aut culpa error optio repellendus corporis laudantium ut!</p>
+                <p>Rem reiciendis modi, nobis labore repellendus suscipit placeat, at eum exercitationem quisquam optio facere sequi quam officiis dolorem? Dignissimos delectus dolorem accusantium non aperiam, adipisci quaerat nihil ipsum ullam iste.</p>
+                <p>Praesentium officiis temporibus voluptate minima aliquid! Nostrum suscipit iure fugiat quasi cum, sapiente beatae neque ducimus pariatur tenetur doloremque aspernatur eos totam sint ipsum illum nisi deserunt illo magnam fuga.</p>
+                <p>Tempora in soluta, aperiam possimus, saepe quis nisi minima ipsum cupiditate. Atque pariatur sapiente quasi. Nesciunt sapiente, beatae neque doloribus voluptate error quaerat, sint quae quasi quibusdam adipisci architecto ut.</p>
+                <p>Inventore, excepturi, distinctio hic alias, saepe laboriosam aliquid dignissimos quo earum odit unde veniam aspernatur, reiciendis rerum voluptate laudantium quos ipsa aperiam a ullam nisi in accusantium asperiores facilis provident!</p>
+                <p>Similique rem quas modi magnam, ea quibusdam maiores deserunt! Laudantium at, provident molestias facere ducimus? Corporis repellendus esse blanditiis, unde ullam recusandae tenetur ab velit, rerum ad doloremque, praesentium impedit!</p>
+                </div>
+            </div>
+        </div>
+        <div class="row section" id="step-second">
+            <div class="container">
+            <div class="col-md-12">
+                <h1>Etap 2 <small>Kopia rejestru</small></h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit nisi deserunt, totam quod culpa ad et aut sunt blanditiis? Sit iste ut rerum sunt amet eum. Rerum corporis eveniet saepe?</p>
+                <p>Nisi vitae dolorum, molestiae consectetur laudantium tempore veniam eum eius quia, provident optio atque soluta, possimus, veritatis. Ipsum autem accusamus esse asperiores eligendi consectetur porro nobis eaque quae amet. Saepe?</p>
+                <p>Adipisci nemo, maxime. Magnam obcaecati, atque architecto corrupti reprehenderit! Cum mollitia sint praesentium, neque molestiae voluptatibus in omnis. Dolorum nesciunt omnis animi nisi libero deleniti, neque et rerum possimus illo.</p>
+                <p>Dignissimos repudiandae quisquam fugiat adipisci. Quasi eligendi dignissimos recusandae veritatis fugit, quia, itaque est vero harum repudiandae consectetur asperiores dolorem labore saepe dolores rem numquam eveniet iure et deleniti cumque.</p>
+                <p>Reiciendis velit a, hic deserunt amet, accusamus ipsum ab eius reprehenderit. Accusantium aspernatur quidem quam at amet nihil, recusandae alias doloribus, reiciendis impedit nesciunt provident, voluptatum modi dolor facere sapiente.</p>
+                <p>Beatae, numquam quam placeat aliquam ullam magnam ipsa dolores recusandae nesciunt dolorum sed ad sint nemo earum reprehenderit excepturi? Vitae quaerat alias sequi inventore et saepe distinctio consequatur itaque repudiandae?</p>
+                <p>Cumque assumenda tempora veniam qui dignissimos dolorem facere excepturi. Magni rem aliquam ex corporis minus delectus quam rerum maiores repellendus enim optio blanditiis explicabo laudantium dolorem cum voluptate, perspiciatis praesentium!</p>
+                <p>Sed placeat soluta voluptas cum! Nisi facilis in quae placeat cumque distinctio quidem consequuntur magnam neque expedita, dolorem accusantium nostrum laudantium corporis doloremque autem veniam voluptatibus. Nesciunt officiis, voluptate ipsam?</p>
+            </div>
+            </div>
+        </div>
+
+        <div class="row section" id="step-third">
+            <div class="container">
+            <div class="col-md-12">
+                <h1>Etap 3 <small>Presja społeczna</small></h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius odio, placeat quis aspernatur? Doloremque aliquid, ipsam facilis quibusdam. A repudiandae delectus inventore necessitatibus optio, ipsa, quia aut atque nisi error?</p>
+                <p>Esse tenetur eos facilis distinctio quidem maxime, a, cumque nesciunt. Unde facere architecto, quo, ipsum eaque quas optio iusto ipsa velit eligendi debitis numquam aliquam laborum voluptatum commodi fugiat deserunt.</p>
+                <p>Dicta, ullam, totam vel quod nostrum quidem consequuntur. Quas aut, ex quae dignissimos quaerat unde error rem totam, sit veritatis repellat sed delectus. Aut ipsum accusamus quis, numquam. Rem, itaque.</p>
+                <p>Natus excepturi atque nostrum obcaecati corporis soluta asperiores dolore nemo? A unde hic blanditiis suscipit vel quae, labore voluptatem, atque optio nisi eos tempora accusantium quis delectus magni, facere doloremque.</p>
+                <p>Ipsam autem odit recusandae possimus magnam fuga ducimus, repellendus, nemo soluta reprehenderit architecto. Recusandae minima dolorem tempore earum, eligendi doloremque. Cum earum deleniti doloribus, tenetur ea soluta illo error dolore.</p>
+                <p>Quia alias quam odio aliquam soluta ipsum vero et! A eaque eum nobis, eligendi minima exercitationem cumque tenetur, sequi harum? Sapiente quas omnis aliquam ratione sint reiciendis ipsum asperiores iure.</p>
+                <p>Fugit sint error, totam molestias a, dicta atque asperiores eos aut tempore aperiam excepturi praesentium, similique eius illum porro ipsa harum veritatis! Soluta officia numquam dolor molestiae a asperiores vitae.</p>
+                <p>Illo impedit molestias tempora velit in rem, quis explicabo, possimus cum obcaecati, architecto! Modi quae, velit quam? Culpa, commodi, est. Odit, nostrum! Provident, suscipit delectus nam facere facilis cum aut.</p>
+                <p>At, suscipit reprehenderit! Odio aut esse sunt quia tempora temporibus quasi dignissimos labore explicabo itaque quae, necessitatibus aperiam, rerum porro adipisci perferendis. Fugiat, aperiam similique cumque distinctio minima libero quaerat.</p>
+                <p>Nam consequatur ducimus, deserunt, at facere inventore illo suscipit, minus eligendi quia dolorem perspiciatis molestiae deleniti laborum non eius a error quam earum minima voluptas veniam. Sequi voluptate officia, quod.</p>
+            </div>
+            </div>
+        </div>
+
+        <div class="row section" id="contact">
+            <div class="container">
+                <div class="col-md-6">
+                    <h1>Kontakt</h1>
+                    <p>Jeżeli działasz, potrzebujesz pomocy, nie wiesz co robić, chcesz się pochwalić działaniami, albo cokolwiek hamuje Twoje działania. Napisz <a href="mailto:naczelnik@jawnosc.tk">naczelnik@jawnosc.tk</a>.</p>
+                    <p>Zapewniamy bezpłatne wsparcie prawcie. Chętnie podzielimy się doświadczeniem, podsuniemy pomysły co jeszcze można zrobić.</p>
+                </div>
+                <div class="col-md-6">
+                    <h1>Partnerzy</h1>
+                    <a href="http://pilnujemy.info"><img src="logo-pilnujemy.svg" width="50%"></a>
+                    <a href="http://siecobywatelska.pl"><img src="logo-watchdog.svg" width="50%"></a>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>    </body>
+  </html>
