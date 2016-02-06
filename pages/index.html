@@ -1,0 +1,92 @@
+{% extends "_base.html" %}
+
+{% block body %}
+<div class="row section section-very-light" id="home">
+  <div class="container">
+    <img src="{% static 'images/pru.svg' %}" width="100%">
+    <div class="col-md-12">
+      <p>Chcemy, aby każdy urząd publikował na swoich podstawowe informacje o zawieranych umowach. Docelowo powinny być to informacje o wszystkich wydatkach.</p>
+      <p>Nie jesteśmy w stanie wystąpić o rejestr umów do każdego urzędu w Polsce, dlatego napisaliśmy procudurę jak każdy w trzech prostych krokach może przekonać do jego publikacji.</p>
+      <a class="btn btn-primary btn-lg" href="{% url '/procedura.html' %}" role="button">Przejdź do procedury &raquo;</a>
+    </div>
+  </div>
+</div>
+<div class="row section section-light" id="arguments">
+  <!-- Example row of columns -->
+  <div class="container">
+    <div class="col-md-12">
+      <h1>Dlaczego?</h1>
+    </div>
+    <div class="col-md-3">
+      <h2>Jakość debaty publicznej</h2>
+      <p>Zainteresowany obywatel może w każdym przypadku sprawdzać oraz odnosić się do konkretnych wydatków instytucji publicznej</p>
+      <!--<p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>-->
+    </div>
+    <div class="col-md-3">
+      <h2>Prewencja</h2>
+      <p>Wiedząc o tym, że każdy wydatek jest jawny i może zostać krytycznie oceniony decydent bardzo dba o to, aby zapłacona kwota zapewniała dobrą jakość za dobrą cenę. To ochrona przed nieprawidłowościami.</p>
+      <!--<p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>-->
+    </div>
+    <div class="col-md-3">
+      <h2>Partnerstwo</h2>
+      <p>Widząc jak pieniądze są wydawane i co ile kosztuje możemy się z tego uczyć. Niektórzy porównują ceny pomiędzy gminami i tak zaczyna się wspólne myślenie o tym jak wydać pieniądze najlepiej.</p>
+      <!--<p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>-->
+    </div>
+    <div class="col-md-3">
+      <h2>Oszczędność</h2>
+      <p>Systematyczna publikacja zmniejsza koszty działania administracji, usprawnia prace urzędników, którzy w takim razie nie muszą odpowiadać na składane coraz częściej wnioski.</p>
+      <!--<p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>-->
+    </div>
+  </div>
+</div>
+<div class="row section section-medium" id="examples">
+  <div class="container">
+    <h1>Przykłady</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur non corrupti ullam aliquid cum! Quis facilis suscipit, magnam, dolore doloremque praesentium illo illum quod debitis dolores, pariatur adipisci eius iste.</p>
+    <p>Voluptas expedita dolor blanditiis, ut reiciendis magni inventore rem perspiciatis laudantium, error recusandae iusto, maiores aliquid beatae aliquam quaerat tempore! Veritatis ullam unde quia dicta porro voluptatum ea, possimus aliquam.</p>
+    <p>Odit saepe consequuntur minus mollitia! Tenetur consequatur illum incidunt cumque, autem voluptates. Et delectus repellendus amet! Sed quod, commodi maiores? In deserunt minus sequi cupiditate fuga. Dolorem saepe distinctio repellat.</p>
+    <p>Eum excepturi sunt, dolorum, laborum pariatur perferendis libero iure non asperiores incidunt nostrum maiores animi beatae ducimus, aliquid voluptas. Magnam similique ratione sint animi adipisci esse, aliquam repellat impedit iure.</p>
+    <p>Illum, harum, magnam. Reprehenderit itaque possimus architecto ducimus, corporis ex rem vitae molestiae aperiam ab provident mollitia minima, assumenda fugit, repellat illum dignissimos nisi iure asperiores. Numquam reiciendis alias, quasi.</p>
+    <p>Asperiores ab assumenda obcaecati at repudiandae, recusandae corrupti placeat possimus eum beatae, iure magni dolore enim. Eum molestias sunt debitis praesentium vero, autem dolorem, sint cupiditate itaque tempore quo unde?</p>
+    <p>Similique perspiciatis voluptate vitae perferendis aliquam officiis, nam asperiores ipsa fugit adipisci, provident eius laudantium, facilis voluptates pariatur expedita minus et totam dolorem molestias, eveniet natus ad. Tempore accusantium, voluptatem.</p>
+    <p>Quasi excepturi perferendis, ex autem voluptate doloribus officiis odio possimus dolore enim totam tenetur adipisci iste velit fugit ipsam sed amet et minus? Laboriosam aliquam iusto quidem doloribus rem culpa.</p>
+    <p>Repellendus sed, veritatis. In quis labore, eveniet cumque aperiam, eius culpa vero maiores iste fuga magnam sunt perspiciatis quae vitae officiis, iure commodi natus eos ab, sint suscipit dicta id.</p>
+    <p>Quasi delectus cum, commodi accusamus dolor repellat facilis, fugit enim adipisci cupiditate iusto dolore! Sunt, pariatur sint soluta tempore, necessitatibus maxime eligendi laborum cupiditate ab, fuga, architecto dolorum dignissimos quas!</p>
+  </div>
+
+</div>
+
+<div class="row section section-very-light" id="roadmap">
+  <div class="container">
+    <h1>Plan</h1>
+    <img src="{% static 'images/pru-procedura.jpg' %}" width="100%">
+  </div>
+</div>
+
+
+<div class="row section section-hard">
+  <div class="container">
+    <div class="col-md-12">
+      <h1>Podejmij działania</h1>
+      <p>Przejdź do procedura, która objaśnia krok po kroku ze wzorami pism jak wprowadzić rejestr umów.</p>
+      <a class="btn btn-primary btn-lg" href="{% url '/procedura.html' %}" role="button">Przejdź do procedury &raquo;</a>
+    </div>
+  </div>
+</div>
+
+
+<div class="row section section-very-light" id="contact">
+  <div class="container">
+    <div class="col-md-6">
+      <h1>Kontakt</h1>
+      <p>Jeżeli działasz, potrzebujesz pomocy, nie wiesz co robić, chcesz się pochwalić działaniami, albo cokolwiek hamuje Twoje działania. Napisz <a href="mailto:naczelnik@jawnosc.tk">naczelnik@jawnosc.tk</a>.</p>
+      <p>Zapewniamy bezpłatne wsparcie prawcie. Chętnie podzielimy się doświadczeniem, podsuniemy pomysły co jeszcze można zrobić.</p>
+    </div>
+    <div class="col-md-6">
+      <h1>Partnerzy</h1>
+      <a href="http://pilnujemy.info"><img src="{% static 'images/logo-pilnujemy.svg' %}" width="50%"></a>
+      <a href="http://siecobywatelska.pl"><img src="{% static 'images/logo-watchdog.svg' %}" width="50%"></a>
+    </div>
+  </div>
+</div>
+{% endblock %}
