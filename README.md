@@ -1,4 +1,6 @@
 # Publiczny Rejestr Umów
+![Logo inicjatywy Publiczny Rejestr Umów](http://i.imgur.com/PZ6Pm80.png)
+
 Strona inicjatywy na rzecz publikacji rejestrów umów.
 
 # Installation
