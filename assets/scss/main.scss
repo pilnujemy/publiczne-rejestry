@@ -1,0 +1,74 @@
+// Bootstrap variables
+@import 'variables';
+
+// External depedencies
+@import 'bootstrap';
+
+.section {
+    padding-bottom: 20px;
+    padding-top: 40px;
+}
+.section h1>small {
+    color: #fff;
+}
+#first {
+    background-color: #fff;
+    color: #000;
+}
+#first p {
+    margin-bottom: 15px;
+    font-size: 21px;
+    font-weight: 200;
+    /* color: #fff; */
+}
+
+.section-very-light {
+    background-color: #fff;
+    color: #000;
+}
+.section-light {
+    background-color: #3CBAF1;
+    color: #fff;
+}
+.section-medium {
+    background-color: #009FE3;
+    color: #fff;
+}
+.section-hard {
+    background-color: #6CC9F1;
+    color: #fff;
+}
+body {
+    padding-top: 70px;
+    position:relative;
+}
+.navbar {
+    background-color: #fff;
+}
+.navbar-nav > li.active {
+    background-color: #009FE3;
+}
+.navbar-nav > li.active a {
+    color: #fff;
+
+}
+
+
+/* Sidebar modules for boxing content */
+.sidebar-module {
+    padding: 15px;
+    margin: 0 -15px 15px;
+}
+.sidebar-module-inset {
+    padding: 15px;
+    background-color: #f5f5f5;
+    border-radius: 4px;
+}
+.sidebar-module-inset p:last-child,
+.sidebar-module-inset ul:last-child,
+.sidebar-module-inset ol:last-child {
+    margin-bottom: 0;
+}
+.sidebar-module a {
+    color: #0565b7;
+}
