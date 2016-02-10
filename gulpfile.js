@@ -96,9 +96,7 @@ gulp.task("images", function () {
 });
 
 // Rerun the task when a file changes
-gulp.task("watch", ['serve'], function () {
-    livereload.listen();
-
+gulp.task("watch", ["serve"], function () {
     config.scss.watch.forEach(function (path) {
         gulp.watch(path, ["scss"]);
     });
