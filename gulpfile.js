@@ -61,6 +61,7 @@ gulp.task("js", function () {
     var directory = path.dirname(config.script.output);
 
     return gulp.src(config.script.input)
+        .pipe(plugins.plumber());
         .pipe(plugins.concat(filename, {newLine: ';'}))
         .pipe(gulp.dest(directory))
         .pipe(livereload({ stream:true }))
@@ -72,6 +73,7 @@ gulp.task("js", function () {
 
 gulp.task("scss", function () {
     return gulp.src(config.scss.input)
+        .pipe(plugins.plumber())
         .pipe(plugins.sourcemaps.init({ debug: true }))
         .pipe(plugins.sass({
             style: "expanded",
