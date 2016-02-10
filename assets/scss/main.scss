@@ -5,11 +5,14 @@
 @import 'bootstrap';
 
 .section {
-    padding-bottom: 20px;
-    padding-top: 40px;
+    position: relative;
+    padding: 60px 0;
+    h1 > small {
+        color: #fff;
+    }
 }
-.section h1>small {
-    color: #fff;
+.section__title{
+    margin: 0;
 }
 #first {
     background-color: #fff;
@@ -21,7 +24,41 @@
     font-weight: 200;
     /* color: #fff; */
 }
-
+.introduction__wrapper{
+    position: relative;
+    height: 100%;
+}
+.section--introduction{
+    background:{
+        image: url('/static/images/stock-1.jpg');
+        size: cover;
+        position: top center;
+    }
+    @media (min-width: $screen-md-min) {
+        height: 100vh;
+    }
+}
+.introduction{
+    @media (min-width: $screen-md-min) {
+        position: absolute;
+        top: 50%;
+        right: 0;
+            
+        transform: translate(0, -50%);
+        width: percentage(2/3);
+        float: right;
+    }
+    font-size: 1.5em;
+    color: black;
+}
+.introduction__text{
+    padding: 2em;
+    background: rgba(white, .8);
+}
+.introduction__logo{
+    width: 100%;
+    padding: 2em;
+}
 .section-very-light {
     background-color: #fff;
     color: #000;
@@ -39,21 +76,15 @@
     color: #fff;
 }
 body {
-    padding-top: 70px;
     position:relative;
 }
-.navbar {
-    background-color: #fff;
-}
-.navbar-nav > li.active {
-    background-color: #009FE3;
-}
-.navbar-nav > li.active a {
-    color: #fff;
 
+.navbar-opaque{
+    @media (min-width: $screen-md-min) {
+        opacity: .6;
+        transition: opacity .5s;
+    }
 }
-
-
 /* Sidebar modules for boxing content */
 .sidebar-module {
     padding: 15px;

@@ -1,45 +1,46 @@
 {% extends "_base.html" %}
 
 {% block body %}
-<div class="row section section-very-light" id="home">
-  <div class="container">
-    <div class="col-md-12">
-      <img src="{% static 'images/pru.svg' %}" width="100%" alt="Publiczny Rejestr Umów">
-      <p>Chcemy, aby każdy urząd publikował na swoich podstawowe informacje o zawieranych umowach. Docelowo powinny być to informacje o wszystkich wydatkach.</p>
-      <p>Nie jesteśmy w stanie wystąpić o rejestr umów do każdego urzędu w Polsce, dlatego napisaliśmy procudurę jak każdy w trzech prostych krokach może przekonać do jego publikacji.</p>
-      <a class="btn btn-primary btn-lg" href="{% url '/procedura.html' %}" role="button">Przejdź do procedury &raquo;</a>
+<div class="section section--introduction" id="home">
+  <div class="container introduction__wrapper">
+    <div class="introduction">
+      <img src="{% static 'images/pru.svg' %}" class="introduction__logo" alt="Publiczny Rejestr Umów">
+      <div class="introduction__text">
+        <p>Chcemy, aby każdy urząd publikował na swoich podstawowe informacje o zawieranych umowach. Docelowo powinny być to informacje o wszystkich wydatkach.</p>
+        <p>Nie jesteśmy w stanie wystąpić o rejestr umów do każdego urzędu w Polsce, dlatego napisaliśmy procudurę jak każdy w trzech prostych krokach może przekonać do jego publikacji.</p>
+      </div>
     </div>
   </div>
 </div>
-<div class="row section section-light" id="arguments">
+<div class="section section-light" id="arguments">
   <!-- Example row of columns -->
   <div class="container">
-    <div class="col-md-12">
-      <h1>Dlaczego?</h1>
-    </div>
-    <div class="col-md-3">
-      <h2>Jakość debaty publicznej</h2>
-      <p>Zainteresowany obywatel może w każdym przypadku sprawdzać oraz odnosić się do konkretnych wydatków instytucji publicznej</p>
-      <!--<p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>-->
-    </div>
-    <div class="col-md-3">
-      <h2>Prewencja</h2>
-      <p>Wiedząc o tym, że każdy wydatek jest jawny i może zostać krytycznie oceniony decydent bardzo dba o to, aby zapłacona kwota zapewniała dobrą jakość za dobrą cenę. To ochrona przed nieprawidłowościami.</p>
-      <!--<p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>-->
-    </div>
-    <div class="col-md-3">
-      <h2>Partnerstwo</h2>
-      <p>Widząc jak pieniądze są wydawane i co ile kosztuje możemy się z tego uczyć. Niektórzy porównują ceny pomiędzy gminami i tak zaczyna się wspólne myślenie o tym jak wydać pieniądze najlepiej.</p>
-      <!--<p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>-->
-    </div>
-    <div class="col-md-3">
-      <h2>Oszczędność</h2>
-      <p>Systematyczna publikacja zmniejsza koszty działania administracji, usprawnia prace urzędników, którzy w takim razie nie muszą odpowiadać na składane coraz częściej wnioski.</p>
-      <!--<p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>-->
+    <h1 class="section__title">Dlaczego?</h1>
+    <div class="row">
+      <div class="col-xs-12 col-md-6">
+        <h2>Jakość debaty publicznej</h2>
+        <p>Zainteresowany obywatel może w każdym przypadku sprawdzać oraz odnosić się do konkretnych wydatków instytucji publicznej</p>
+        <!--<p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>-->
+      </div>
+      <div class="col-xs-12 col-md-6">
+        <h2>Prewencja</h2>
+        <p>Wiedząc o tym, że każdy wydatek jest jawny i może zostać krytycznie oceniony decydent bardzo dba o to, aby zapłacona kwota zapewniała dobrą jakość za dobrą cenę. To ochrona przed nieprawidłowościami.</p>
+        <!--<p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>-->
+      </div>
+      <div class="col-xs-12 col-md-6">
+        <h2>Partnerstwo</h2>
+        <p>Widząc jak pieniądze są wydawane i co ile kosztuje możemy się z tego uczyć. Niektórzy porównują ceny pomiędzy gminami i tak zaczyna się wspólne myślenie o tym jak wydać pieniądze najlepiej.</p>
+        <!--<p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>-->
+      </div>
+      <div class="col-xs-12 col-md-6">
+        <h2>Oszczędność</h2>
+        <p>Systematyczna publikacja zmniejsza koszty działania administracji, usprawnia prace urzędników, którzy w takim razie nie muszą odpowiadać na składane coraz częściej wnioski.</p>
+        <!--<p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>-->
+      </div>
     </div>
   </div>
 </div>
-<div class="row section section-medium" id="examples">
+<div class="section section-medium" id="examples">
   <div class="container">
     <h1>Przykłady</h1>
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur non corrupti ullam aliquid cum! Quis facilis suscipit, magnam, dolore doloremque praesentium illo illum quod debitis dolores, pariatur adipisci eius iste.</p>
@@ -56,7 +57,7 @@
 
 </div>
 
-<div class="row section section-very-light" id="roadmap">
+<div class="section section-very-light" id="roadmap">
   <div class="container">
     <h1>Plan</h1>
     <img src="{% static 'images/pru-procedura.jpg' %}" width="100%">
@@ -64,28 +65,32 @@
 </div>
 
 
-<div class="row section section-hard">
+<div class="section section-hard">
   <div class="container">
-    <div class="col-md-12">
-      <h1>Podejmij działania</h1>
-      <p>Przejdź do procedura, która objaśnia krok po kroku ze wzorami pism jak wprowadzić rejestr umów.</p>
-      <a class="btn btn-primary btn-lg" href="{% url '/procedura.html' %}" role="button">Przejdź do procedury &raquo;</a>
+    <div class="row">
+      <div class="col-md-12">
+        <h1>Podejmij działania</h1>
+        <p>Przejdź do procedura, która objaśnia krok po kroku ze wzorami pism jak wprowadzić rejestr umów.</p>
+        <a class="btn btn-primary btn-lg" href="{% url '/procedura.html' %}" role="button">Przejdź do procedury &raquo;</a>
+      </div>
     </div>
   </div>
 </div>
 
 
-<div class="row section section-very-light" id="contact">
+<div class="section section-very-light" id="contact">
   <div class="container">
-    <div class="col-md-6">
-      <h1>Kontakt</h1>
-      <p>Jeżeli działasz, potrzebujesz pomocy, nie wiesz co robić, chcesz się pochwalić działaniami, albo cokolwiek hamuje Twoje działania. Napisz <a href="mailto:naczelnik@jawnosc.tk">naczelnik@jawnosc.tk</a>.</p>
-      <p>Zapewniamy bezpłatne wsparcie prawcie. Chętnie podzielimy się doświadczeniem, podsuniemy pomysły co jeszcze można zrobić.</p>
-    </div>
-    <div class="col-md-6">
-      <h1>Partnerzy</h1>
-      <a href="http://pilnujemy.info"><img src="{% static 'images/logo-pilnujemy.svg' %}" width="50%"></a>
-      <a href="http://siecobywatelska.pl"><img src="{% static 'images/logo-watchdog.svg' %}" width="50%"></a>
+    <div class="row">
+      <div class="col-md-6">
+        <h1>Kontakt</h1>
+        <p>Jeżeli działasz, potrzebujesz pomocy, nie wiesz co robić, chcesz się pochwalić działaniami, albo cokolwiek hamuje Twoje działania. Napisz <a href="mailto:naczelnik@jawnosc.tk">naczelnik@jawnosc.tk</a>.</p>
+        <p>Zapewniamy bezpłatne wsparcie prawcie. Chętnie podzielimy się doświadczeniem, podsuniemy pomysły co jeszcze można zrobić.</p>
+      </div>
+      <div class="col-md-6">
+        <h1>Partnerzy</h1>
+        <a href="http://pilnujemy.info"><img src="{% static 'images/logo-pilnujemy.svg' %}" width="50%"></a>
+        <a href="http://siecobywatelska.pl"><img src="{% static 'images/logo-watchdog.svg' %}" width="50%"></a>
+      </div>
     </div>
   </div>
 </div>
