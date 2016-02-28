@@ -29,11 +29,13 @@
     height: 100%;
 }
 .section--introduction{
-    background:{
-        image: url('/static/images/stock-1.jpg');
-        size: cover;
-        position: top center;
-    }
+    @include img-retina("/static/images/stock-1.jpg", "/static/images/stock-1@2x.jpg", cover, unquote(''));
+    background-size: cover;
+    // background:{
+    //     image: url('/static/images/stock-1.jpg');
+    //     size: cover;
+    //     position: top center;
+    // }
     @media (min-width: $screen-md-min) {
         height: 100vh;
     }
