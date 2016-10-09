@@ -21,7 +21,7 @@
   "homepage": "https://github.com/pilnujemy/publiczne-rejestry#readme",
   "devDependencies": {
     "bower": "^1.4.1",
-    "browser-sync": "^2.11.1",
+    "browser-sync": "^2.17.2",
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^3.0.1",
     "gulp-bower": "0.0.13",
